@@ -11,7 +11,7 @@ function MedicineRow({ data, deleteMedicine, editMedicine }) {
       </td>
       <td>
         <Button onClick={() => editMedicine(data.id)} variant="primary">
-          E
+          Edit
         </Button>
       </td>
       <td>{data.name}</td>

@@ -11,11 +11,11 @@ function ManageMents(props) {
       <Table striped bordered hover>
         <thead>
           <tr>
-            <th>#</th>
+            <th>Delete</th>
             <th>Edit</th>
-            <th>name</th>
-            <th>type</th>
-            <th>quantity</th>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Quantity</th>
             <th>Note</th>
           </tr>
         </thead>

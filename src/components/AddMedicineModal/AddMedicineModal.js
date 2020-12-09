@@ -146,7 +146,7 @@ function AddMedicineModal({ show, handleShow, handleClose, addMedicine, editMedi
           </Button>
           {editData ?
             <Button variant="primary" onClick={handleEdit}>
-              EDIT madicine
+              Edit madicine
          </Button> :
             <Button variant="primary" onClick={handleAdd}>
               Add madicine
