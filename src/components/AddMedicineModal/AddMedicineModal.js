@@ -31,19 +31,19 @@ function AddMedicineModal({ show, handleShow, handleClose, addMedicine, editMedi
 
   const handleEdit = () => {
     if (!medicineData.name || !medicineData.name.trim()) {
-      dispatch({type: "SET_TOAST", payload: "Please Enter name"})
+      dispatch({ type: "SET_TOAST", payload: "Please Enter name" })
       return;
     }
     if (!medicineData.type || !medicineData.type.trim()) {
-      dispatch({type: "SET_TOAST", payload: "Please Enter type"})
+      dispatch({ type: "SET_TOAST", payload: "Please Enter type" })
       return;
     }
     if (!medicineData.note || !medicineData.note.trim()) {
-      dispatch({type: "SET_TOAST", payload: "Please Enter note"})
+      dispatch({ type: "SET_TOAST", payload: "Please Enter note" })
       return;
     }
     if (!medicineData.quantity) {
-      dispatch({type: "SET_TOAST", payload: "Please Enter quantity"})
+      dispatch({ type: "SET_TOAST", payload: "Please Enter quantity" })
       return;
     }
     else {
@@ -60,19 +60,19 @@ function AddMedicineModal({ show, handleShow, handleClose, addMedicine, editMedi
 
   const handleAdd = () => {
     if (!medicineData.name || !medicineData.name.trim()) {
-      dispatch({type: "SET_TOAST", payload: "Please Enter name"})
+      dispatch({ type: "SET_TOAST", payload: "Please Enter name" })
       return;
     }
     if (!medicineData.type || !medicineData.type.trim()) {
-      dispatch({type: "SET_TOAST", payload: "Please Enter type"})
+      dispatch({ type: "SET_TOAST", payload: "Please Enter type" })
       return;
     }
     if (!medicineData.note || !medicineData.note.trim()) {
-      dispatch({type: "SET_TOAST", payload: "Please Enter note"})
+      dispatch({ type: "SET_TOAST", payload: "Please Enter note" })
       return;
     }
     if (!medicineData.quantity) {
-      dispatch({type: "SET_TOAST", payload: "Please Enter quantity"})
+      dispatch({ type: "SET_TOAST", payload: "Please Enter quantity" })
       return;
     }
     else {

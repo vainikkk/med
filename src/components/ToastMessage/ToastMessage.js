@@ -1,12 +1,11 @@
 import React from 'react';
 import { Toast } from 'react-bootstrap';
 
-function ToastMessage({show, delay, closeToast, message}) {
+function ToastMessage({ show, delay, closeToast, message }) {
   return (
     <div
       aria-live="polite"
       aria-atomic="true"
-      
       style={{
         position: 'absolute',
         zIndex: "99999",
@@ -29,7 +28,7 @@ function ToastMessage({show, delay, closeToast, message}) {
           <img src="holder.js/20x20?text=%20" className="rounded mr-2" alt="" />
           <strong className="mr-auto text-danger">Error!</strong>
         </Toast.Header>
-        <Toast.Body style={{fontWeight: 600, fontSize: "18px"}}>{message}</Toast.Body>
+        <Toast.Body style={{ fontWeight: 600, fontSize: "18px" }}>{message}</Toast.Body>
       </Toast>
     </div>
   );

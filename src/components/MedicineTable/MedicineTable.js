@@ -1,11 +1,11 @@
 import React from 'react';
 import { Table } from 'react-bootstrap';
 import { useSelector } from 'react-redux';
-import MedicineRow from '../components/MedicineRow/MedicineRow';
+import MedicineRow from '../MedicineRow/MedicineRow';
 
-function ManageMents(props) {
+function MedicineTable(props) {
   const state = useSelector(state => state)
-  
+
   return (
     <div>
       <Table striped bordered hover>
@@ -21,12 +21,12 @@ function ManageMents(props) {
         </thead>
         <tbody>
           {state?.data?.length > 0 && state.data.map(value =>
-            <MedicineRow 
+            <MedicineRow
               key={value.id}
               data={value}
               editMedicine={props.handleEdit}
               deleteMedicine={props.deleteMedicine}
-              />
+            />
           )}
         </tbody>
       </Table>
@@ -34,4 +34,4 @@ function ManageMents(props) {
   );
 }
 
-export default ManageMents;
+export default MedicineTable;

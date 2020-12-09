@@ -73,7 +73,6 @@ const reducer = (state = initialState, action) => {
         showToast: false
       }
     case "SET_TOAST":
-      console.log(action)
       return {
         ...state,
         showToast: true,
